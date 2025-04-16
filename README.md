@@ -1,7 +1,3 @@
-¡Genial, Eleonora! Vamos a dejar ese `README.md` listo para lucirse en GitHub 😄
-
----
-
 ### 📄 `README.md` para tu proyecto de Selenium WebDriver
 
 ```markdown
