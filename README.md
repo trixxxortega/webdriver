@@ -61,7 +61,7 @@ _O modificá el `pom.xml` según tu framework de pruebas si es necesario._
 ## ✍️ Autor
 
 Beatriz Eleonora Ortega  
-[LinkedIn](https://www.linkedin.com/in/tuusuario) | Buenos Aires, Argentina
+[LinkedIn](https://www.linkedin.com/in/eleonora-ortega/) | Buenos Aires, Argentina
 
 ---
 
