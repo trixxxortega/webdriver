@@ -1,70 +1,81 @@
-### 📄 `README.md` para tu proyecto de Selenium WebDriver
+# 🚀 Enterprise UI Automation Framework | Java & Selenium
 
-```markdown
-# Proyecto Selenium WebDriver – Curso
+Professional-grade UI Automation Framework built with **Java**, designed for scalability and seamless **CI/CD** integration.
 
-Este es un proyecto simple realizado como parte de un curso de automatización con **Selenium WebDriver** en Java.
+## 🏛️ Architecture & Design Patterns
 
-## 🚀 Tecnologías utilizadas
+The framework follows a decoupled architecture to maximize reusability:
 
-- Java 17+
-- Maven
-- Selenium WebDriver
-- IntelliJ IDEA (opcional)
-- JUnit/TestNG (según el curso)
-- Git
+* **Page Object Model (POM):** Separation of test logic from UI interactions.
+* **Test Lifecycle:** Centralized control via **TestNG Annotations**.
+* **Resilient Waits:** Fluent waits to eliminate test flakiness.
+* **Parallel Execution:** Optimized for high-speed feedback cycles.
 
-## 📁 Estructura del proyecto
+## 🛠️ Tech Stack
 
-```
+* **Language:** Java 21 (LTS)
+* **Build Tool:** Maven
+* **UI Engine:** Selenium WebDriver
+* **Test Runner:** TestNG
+* **CI/CD:** GitHub Actions
+
+## 📁 Project Structure
+
+
+
+[Image of page object model architecture diagram]
+
+
+```text
 src/
-└── main/
-    └── java/
-        └── com/
-            └── ti/
-                └── ejemplos/
-                    └── module3/
-                        └── PrimerScript.java
-        └── org/
-            └── example/
-                └── Main.java
-pom.xml
+└── test/java/com/ti/automation/
+    ├── pages/  # POM Selectors & Actions
+    ├── tests/  # Functional test cases
+    └── base/   # Driver & Base Config
 ```
 
-## 🧪 ¿Qué hace este proyecto?
+## 🎯 Scope of Testing: Financial Operations (ParaBank)
 
-Automatiza la apertura de un navegador y la interacción con una página web simple para fines de práctica de Selenium WebDriver.
+Automating high-integrity banking workflows to demonstrate business-value validation.
 
-## ▶️ Cómo ejecutarlo
+### Key Automated Scenarios:
 
-1. Cloná este repositorio:
+1. Financial Integrity: Validating "Transfer Funds" and balance updates.
 
-```bash
-git clone https://github.com/trixxxortega/webdriver.git
+2. Bill Pay Management: Verifying utility payments and consolidation.
+
+3. Auditing: Checking historical ledgers and transaction IDs.
+
+4. Negative Testing: Resilience checks on insufficient funds/invalid data.
+
+## 📊 Strategic QA Governance
+
+### Managed via testng.xml for targeted validation:
+
+1. Smoke Suite: Critical Happy Paths for PR feedback.
+
+2. Regression Suite: Comprehensive coverage for stability.
+
+3. Parallel: Multi-threaded execution for faster CI/CD.
+
+## ▶️ Execution Guide
+
+### Prerequisites: Java 21 & Maven installed.
+
+### Clone & Run:
+
+```Bash
+git clone
 cd webdriver
-```
-
-2. Asegurate de tener [Java](https://www.oracle.com/java/technologies/javase-downloads.html) y [Maven](https://maven.apache.org/) instalados.
-
-3. Ejecutá el proyecto con:
-
-```bash
 mvn clean test
 ```
 
-_O modificá el `pom.xml` según tu framework de pruebas si es necesario._
+### Run Specific Suite:
 
-## ✍️ Autor
-
-Beatriz Eleonora Ortega  
-[LinkedIn](https://www.linkedin.com/in/eleonora-ortega/) | Buenos Aires, Argentina
-
----
-
-Este proyecto es parte de mi camino para convertirme en SDET 🚀  
-¡Gracias por pasarte!
+```Bash
+mvn test -DsuiteXmlFile=testng_smoke.xml
 ```
 
----
+## 👤 Author
 
-¿Querés que lo edite con tu framework de pruebas real (JUnit o TestNG)? También puedo agregar una sección de screenshots o pasos extra si usás Postman, Jenkins, etc.
+**Eleonora Ortega** - Senior / Lead QA Engineer LinkedIn | Buenos Aires, Argentina
