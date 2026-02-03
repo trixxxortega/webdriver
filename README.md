@@ -62,20 +62,29 @@ Automating high-integrity banking workflows to demonstrate business-value valida
 
 ### Prerequisites: Java 21 & Maven installed.
 
-### Clone & Run:
 
-```Bash
-git clone
+### Clone & Run
+
+Repository: [webdriver](https://github.com/trixxxortega/webdriver.git)
+
+```
+git clone https://github.com/trixxxortega/webdriver.git
 cd webdriver
 mvn clean test
 ```
 
-### Run Specific Suite:
+Run Specific Suite:
 
-```Bash
+```
 mvn test -DsuiteXmlFile=testng_smoke.xml
 ```
 
 ## 👤 Author
 
-**Eleonora Ortega** - Senior / Lead QA Engineer LinkedIn | Buenos Aires, Argentina
+**Eleonora Ortega** 
+
+Senior / Lead QA Engineer 
+
+📍 Buenos Aires, Argentina
+
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/eleonoraortega/)
